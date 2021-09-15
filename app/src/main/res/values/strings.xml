@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">WhatsappClone</string>
+    <string name="et_hint_your_name">Your Name</string>
+    <string name="et_hint_email">Email</string>
+    <string name="et_hint_password">Password</string>
+    <string name="sign_up">sign up</string>
+    <string name="google">Google</string>
+    <string name="facebook">Facebook</string>
+    <string name="sign_up_with_phone">Sign Up with Phone</string>
+    <string name="already_have_account">Already have Account? Signin</string>
+    <string name="email_phone">Email / Phone</string>
+    <string name="click_for_sign_up">Click for Sign Up</string>
+    <string name="sign_in">sign in</string>
+    <string name="logout">Logout</string>
+    <string name="settings">Settings</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="group_chat">Group Chat</string>
+    <string name="user_name">User Name:</string>
+    <string name="about">About:</string>
+</resources>

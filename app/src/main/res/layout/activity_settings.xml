@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".SettingsActivity">
+
+
+    <ImageView
+        android:id="@+id/settings_back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_left_arrow"
+        android:onClick="gotoMainActivity"
+        app:tint="@color/white" />
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_below="@+id/settings_back_button"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:id="@+id/ll_update_profile"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_gravity="center"
+            android:id="@+id/profile_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_baseline_add_a_photo_24"
+            app:civ_border_width="2dp"
+            android:tint="@color/white"
+            android:onClick="updateProfilePic"
+            android:layout_marginHorizontal="10dp"
+            app:civ_border_color="#FF000000"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:padding="10dp"
+                android:layout_width="125dp"
+                android:text="@string/user_name"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:id="@+id/et_update_username"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:padding="10dp"
+                android:layout_width="125dp"
+                android:text="@string/about"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:id="@+id/et_update_about"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:text="Save"
+            android:onClick="updateProfile"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_ll_policy"
+        android:gravity="center"
+        android:layout_below="@+id/ll_update_profile"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Privacy Policy"
+            android:textSize="@dimen/privacy_policy_text_size"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="About Us"
+            android:textSize="@dimen/privacy_policy_text_size"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Invite a friend"
+            android:textSize="@dimen/privacy_policy_text_size"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Help"
+            android:textSize="@dimen/privacy_policy_text_size"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
